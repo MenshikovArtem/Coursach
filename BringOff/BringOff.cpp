@@ -173,7 +173,7 @@ int main(int argc, char* argv[])
 
 
 	// вывод
-	/*for (unsigned int i = 0; i < fileInfoHeader.biHeight; i++) {
+	for (unsigned int i = 0; i < fileInfoHeader.biHeight; i++) {
 		for (unsigned int j = 0; j < fileInfoHeader.biWidth; j++) {
 			std::cout << std::hex
 				<< +rgbInfo[i][j].rgbRed << " "
@@ -183,7 +183,10 @@ int main(int argc, char* argv[])
 				<< std::endl;
 		}
 		std::cout << std::endl;
-	}*/
+	}
+
+
+
 	fileStream.close();
 
 	fileName = (char*)"CreatedBMPc++.bmp";
